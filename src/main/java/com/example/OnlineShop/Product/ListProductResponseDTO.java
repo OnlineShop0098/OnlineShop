@@ -1,21 +1,13 @@
-package com.example.OnlineShop.ProductController;
+package com.example.OnlineShop.Product;
 
-import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
-@Entity
-@Table(name = "product")
-public class ProductEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ListProductResponseDTO {
     private Long id;
-
     private String name;
     private String description;
     private BigDecimal price;
@@ -29,10 +21,6 @@ public class ProductEntity {
     private String storage;
     private String gpu;
     private String resolution;
-
-    @CreationTimestamp
     private LocalDateTime createdAt;
-
-    @UpdateTimestamp
     private LocalDateTime updatedAt;
 }

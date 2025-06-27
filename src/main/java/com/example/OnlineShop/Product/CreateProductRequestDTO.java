@@ -1,4 +1,4 @@
-package com.example.OnlineShop.ProductController;
+package com.example.OnlineShop.Product;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
